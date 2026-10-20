@@ -23,11 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('hours').textContent = String(hours).padStart(2, '0');
       document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
       document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-      
-      document.getElementById('hours-2').textContent = String(hours).padStart(2, '0');
-      document.getElementById('minutes-2').textContent = String(minutes).padStart(2, '0');
-      document.getElementById('seconds-2').textContent = String(seconds).padStart(2, '0');
-      
+
       if (diff === 0) {
         localStorage.removeItem(STORAGE_KEY);
       }
